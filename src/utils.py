@@ -34,7 +34,7 @@ def generate_sitemap(app):
     return """
         <div style="text-align: center;">
         <img style="max-height: 100px" src='https://leonarmed.github.io/agroinnova/assets/agroinnova_two_color.9ddbf4c0.svg' />
-        <h1>API Test Agroinnova</h1>
+        <h1>API's Agroinnova</h1>
         <p>API HOST: <script>document.write('<input style="padding: 5px; width: 300px" type="text" value="'+window.location.href+'" />');</script></p>
         <p>Remember to specify a real endpoint path like: </p>
         <ul style="text-align: left;">"""+links_html+"</ul></div>"
