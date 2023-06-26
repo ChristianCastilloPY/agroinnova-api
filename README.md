@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <a href="https://sispycom.com"><img height="280" align="left" src="https://www.sispycom.com/sispycom.png" alt="Logo SISPYCOM"></a>
 
 # Flask Boilerplate SISPYCOM
@@ -41,3 +42,6 @@ You have to migrate and upgrade the migrations for every update you make to your
 $ pipenv run migrate # (to make the migrations)
 $ pipenv run upgrade  # (to update your databse with the migrations)
 ```
+=======
+# agroinnova-api
+>>>>>>> dd8411abdc04b990a4a62b1244ebbdddbf25bb52
