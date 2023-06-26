@@ -1,10 +1,7 @@
-<a href="https://www.breatheco.de"><img height="280" align="right" src="https://github.com/4GeeksAcademy/flask-rest-hello/blob/main/docs/assets/badge.png?raw=true"></a>
+<a href="https://sispycom.com"><img height="280" align="left" src="https://www.sispycom.com/sispycom.png" alt="Logo SISPYCOM"></a>
 
-# Flask Boilerplate for Junior Developers
+# Flask Boilerplate SISPYCOM
 
-Create flask API's in minutes, [📹 watch the video tutorial](https://youtu.be/ORxQ-K3BzQA).
-
-- [Extensive documentation here](https://start.4geeksacademy.com).
 - Integrated with Pipenv for package managing.
 - Fast deloyment to heroku with `$ pipenv run deploy`.
 - Use of `.env` file.
@@ -36,8 +33,6 @@ There is an example API working with an example database. All your application c
 - src/utils.py (some reusable classes and functions)
 - src/admin.py (add your models to the admin and manage your data easily)
 
-For a more detailed explanation, look for the tutorial inside the `docs` folder.
-
 ## Remember to migrate every time you change your models
 
 You have to migrate and upgrade the migrations for every update you make to your models:
@@ -46,14 +41,3 @@ You have to migrate and upgrade the migrations for every update you make to your
 $ pipenv run migrate # (to make the migrations)
 $ pipenv run upgrade  # (to update your databse with the migrations)
 ```
-
-## Publish/Deploy your website!
-
-This boilerplate it's 100% read to deploy with Render.com and Herkou in a matter of minutes. Please read the [official documentation about it](https://start.4geeksacademy.com/deploy).
-
-
-### Contributors
-
-This template was built as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), and [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning).
-
-You can find other templates and resources like this at the [school github page](https://github.com/4geeksacademy/).
