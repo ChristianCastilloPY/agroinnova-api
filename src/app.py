@@ -50,16 +50,10 @@ def handle_hello():
 def create_user():
     body = request.json
     new_user = User.create(body)
-    print('')
-    print('')
-    print(new_user)
-    print('')
-    print('')
     if not isinstance(new_user, User):
         return jsonify({
             "message": new_user["message"],
-            "success": False,
-            "data": new_user
+            "success": False
         }), new_user["status"]
     user = User.query.filter_by(email=new_user.email).one_or_none()
     return jsonify({
@@ -117,3 +111,8 @@ def get_data_user():
 if __name__ == '__main__':
     PORT = int(os.environ.get('PORT', 3000))
     app.run(host='0.0.0.0', port=PORT, debug=False)
+
+if __name__ != '__main__':
+    gunicorn_logger = logging.getLogger('gunicorn.error')
+    app.logger.handlers = gunicorn_logger.handlers
+    app.logger.setLevel(gunicorn_logger.level)
