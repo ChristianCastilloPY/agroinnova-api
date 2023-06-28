@@ -50,10 +50,16 @@ def handle_hello():
 def create_user():
     body = request.json
     new_user = User.create(body)
+    print('')
+    print('')
+    print(new_user)
+    print('')
+    print('')
     if not isinstance(new_user, User):
         return jsonify({
             "message": new_user["message"],
-            "success": False
+            "success": False,
+            "data": new_user
         }), new_user["status"]
     user = User.query.filter_by(email=new_user.email).one_or_none()
     return jsonify({
