@@ -28,6 +28,11 @@ class User(db.Model):
     def create(cls, body):
         try:
             user_is_valid = cls.user_exist(email=body.get("email"))
+            print("")
+            print("Pruebaaaa")
+            print(user_is_valid)
+            print("")
+            print("")
             if isinstance(user_is_valid, cls):
                 raise Exception({
                     "message": "Invalid user",
