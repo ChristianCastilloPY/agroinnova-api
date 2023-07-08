@@ -5,7 +5,7 @@ from flask_admin.contrib.sqla import ModelView
 from flask_jwt_extended import JWTManager
 
 def setup_admin(app):
-    app.secret_key = os.environ.get('FLASK_APP_KEY', '@gr01nn0v4')
+    app.secret_key = os.environ.get('FLASK_APP_KEY')
     app.config['FLASK_ADMIN_SWATCH'] = 'cerulean'
     app.config['JWT_SECRET_KEY'] = os.environ.get('JWT_SECRET_KEY')
     admin = Admin(app, name='SISPYCOM', template_mode='bootstrap3')
