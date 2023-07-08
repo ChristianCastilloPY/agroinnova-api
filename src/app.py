@@ -90,7 +90,9 @@ def get_data_user():
                 "success": False
             }), 404
         return jsonify({
-            "data": user.serialize()
+            "data": user.serialize(),
+            "status": "success",
+            "code": 200
         }), 200
     if request.method == "POST":
         user_id = get_jwt_identity()
